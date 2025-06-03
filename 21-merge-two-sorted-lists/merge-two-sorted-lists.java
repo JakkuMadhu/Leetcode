@@ -10,7 +10,7 @@
  */
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode dummy = new ListNode(-1); // dummy node
+       ListNode dummy = new ListNode(-1); // dummy node
         ListNode current = dummy;
 
         // Compare nodes from both lists
@@ -32,6 +32,6 @@ class Solution {
             current.next = list2;
         }
 
-        return dummy.next;
+        return dummy.next; 
     }
 }
