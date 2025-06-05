@@ -14,18 +14,27 @@
  * }
  */
 class Solution {
-    public int plr(TreeNode root,int count)
+    // public int plr(TreeNode root,int count)
+    // {
+    //     if(root==null)
+    //     {
+    //         return count;
+    //     }
+    //     count++;
+    //     count=plr(root.left,count);
+    //     count=plr(root.right,count);
+    //     return count;
+    // }
+    public int lrp(TreeNode root)
     {
         if(root==null)
         {
-            return count;
+            return 0;
         }
-        count++;
-        count=plr(root.left,count);
-        count=plr(root.right,count);
-        return count;
+        return 1+lrp(root.left)+lrp(root.right);
     }
     public int countNodes(TreeNode root) {
-        return plr(root,0);
+        // return plr(root,0);
+        return lrp(root);
     }
     }
