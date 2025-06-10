@@ -1,6 +1,6 @@
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        if(n<1)
+       if(n<1)
         return false;
         if(n==1)
         {
@@ -10,6 +10,6 @@ class Solution {
         {
             n=n/2;
         }
-        return n==1;
+        return n==1;  
     }
 }
